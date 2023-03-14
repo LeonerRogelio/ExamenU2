@@ -1,0 +1,64 @@
+object frmData: TfrmData
+  Left = 0
+  Top = 0
+  ActiveControl = edtData
+  Caption = 'Form1'
+  ClientHeight = 283
+  ClientWidth = 247
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnCloseQuery = FormCloseQuery
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object edtData: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 0
+    Position.Y = 50.000000000000000000
+    Size.Width = 247.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Introduzca un texto...'
+    OnKeyUp = edtDataKeyUp
+  end
+  object memLog: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    Align = Client
+    Size.Width = 247.000000000000000000
+    Size.Height = 193.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 247.000000000000000000
+    Viewport.Height = 193.000000000000000000
+  end
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 247.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object btnBack: TButton
+      Align = Left
+      ModalResult = 8
+      Size.Width = 41.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowlefttoolbutton'
+      TabOrder = 0
+      Text = 'Regresar'
+      OnClick = btnBackClick
+    end
+    object TLtitulo: TLabel
+      Align = Client
+      Size.Width = 206.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'TLtitulo'
+      TabOrder = 1
+    end
+  end
+end

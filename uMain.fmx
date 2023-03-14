@@ -1,0 +1,42 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 308
+  ClientWidth = 259
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object lblMain: TLabel
+    Align = Top
+    Size.Width = 259.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'Formulario Principal'
+    TabOrder = 0
+  end
+  object btnShowFrmDatos: TButton
+    Align = Top
+    Position.Y = 57.000000000000000000
+    Size.Width = 259.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Abrir archivo'
+    OnClick = btnShowFrmDatosClick
+  end
+  object btnExit: TButton
+    Align = Top
+    Position.Y = 114.000000000000000000
+    Size.Width = 259.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Salir'
+    OnClick = btnExitClick
+  end
+end
